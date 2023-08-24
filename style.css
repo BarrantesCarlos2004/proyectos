@@ -1,0 +1,99 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #ccc;
+}
+
+.container {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 5px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.panel-admin {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+form {
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 15px;
+}
+
+.field {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 7px 15px;
+    text-align: center;
+}
+
+form input[type="submit"] {
+    border: none;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px 15px;
+    border: 1px solid rgb(149, 146, 146);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-options {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+button {
+    background: #42B6F8;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.menu-options button {
+    color: white;
+    margin-bottom: 5px;
+}
+
+table {
+    align-self: flex-start;
+    background-color: white;
+    border-radius: 10px;
+}
+
+table th {
+    padding: 10px;
+}
+
+td{
+    text-align: center;
+}
+
+#respuesta{
+    text-align: center;
+}

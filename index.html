@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Administración de alumnos</h1>
+
+        <div class="panel-admin">
+            <form id="form">
+                <label for="nombre">Nombre : </label>
+                <input class="field" type="text" name="nombre" id="nombre" required>
+                <label for="apellido">Apellido: </label>
+                <input class="field" type="text" name="apellido" id="apellido" required>
+                <label for="edad">Edad: </label>
+                <input class="field" type="text" name="edad" id="edad" required>
+                <label for="correo">Correo: </label>
+                <input class="field" type="email" name="correo" id="correo" required>
+                <input type="submit" value="Enviar">
+            </form>
+
+            <form class="menu-options" id="menu-options">
+                <input class="field" type="number" placeholder="ingresa el id del alumno" min="1" step="1" name="id"
+                    required>
+
+                <button type="button" id="editar">Editar Alumno</button>
+                <button type="button" id="remover">Remover alumno</button>
+
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                    </tr>
+                </thead>
+                <tbody id="t-body">
+                    <!--Contenido-->
+                </tbody>
+            </table>
+        </div>
+
+        <p id="respuesta"></p>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
